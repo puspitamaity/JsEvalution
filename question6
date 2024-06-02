@@ -1,0 +1,14 @@
+function rearrangeArray(numbers){
+    const index = numbers.indexOf(4);
+    if (index === -1){
+        console.log("The Number 4 is not found in the array");
+        return;
+    }
+    const rearrangeArray = numbers.slice(index).concat(numbers.slice(0,index));
+    return rearrangeArray;
+}
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+
+console.log(rearrangeArray(numbers));
+
+
