@@ -1,0 +1,26 @@
+
+var store = [
+    {name: "Laptop", price: 75000, rating: 4.5},
+    {name: "Tablet", price: 30000, rating: 4.2},
+    {name: "Smartphone", price: 60000, rating: 4.7},
+    {name: "Smartwatch", price: 20000, rating: 3.9}
+];
+
+function printNamesAndRatings(store){
+    store.forEach(product => {
+        console.log('Name: $ {product.name} ,Rating: ${product.rating}');
+        
+    });
+    function calculateAverageRating(store){
+        const totalRatings = store.reduce((total,product) => total +product.rating, 0);
+        const averageRating = totalRatings / store.length;
+        console.log('Average Ratings: $ {averageRating.toFixed(2)}');
+    }
+    function identifyProductWithMinimumPrice(store){
+        const minPriceProduct= store.reduce((minProduct ,product) => product.price < minProduct.price ? product : minProduct, store[0]);
+        console.log('Product With Minimum Price: ${minPriceProduct}');
+    }
+    printNamesAndRatings(store);
+    calculateAverageRating(store);
+    identifyProductWithMinimumPrice(store);
+}
