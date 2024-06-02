@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Cards</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .card {
+    background-color: #fff;
+    width: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .card-description {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .card-rating {
+    font-size: 14px;
+    color: #6c757d;
+  }
+</style>
+</head>
+<body>
+  <!-- Loop through products and create card for each -->
+  <!-- You can use JavaScript or a server-side language to dynamically generate this HTML -->
+  <!-- Here's a static example for demonstration purposes -->
+  <!-- Replace the static content with dynamic data -->
+  <!-- Example card for each product -->
+  <div class="card">
+    <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="Product Image">
+    <div class="card-content">
+      <div class="card-title">Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</div>
+      <div class="card-price">$109.95</div>
+      <div class="card-description">Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday</div>
+      <div class="card-rating">Rating: 3.9</div>
+    </div>
+  </div>
+  <!-- Repeat the above card structure for each product -->
+  <!-- Replace the static content with dynamic data -->
+  <!-- Example card for each product -->
+  <div class="card">
+    <img src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg" alt="Product Image">
+    <div class="card-content">
+      <div class="card-title">Mens Casual Premium Slim Fit T-Shirts</div>
+      <div class="card-price">$22.3</div>
+      <div class="card-description">Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.</div>
+      <div class="card-rating">Rating: 4.1</div>
+    </div>
+  </div>
+  <!-- Repeat the above card structure for each product -->
+  <!-- Replace the static content with dynamic data -->
+</body>
+</html>
